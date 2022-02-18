@@ -33,6 +33,7 @@ EOF
 
 resource "aws_ebs_volume" "web_host_storage" {
   # unencrypted volume
+  #new comment
   availability_zone = "${var.region}a"
   #encrypted         = false  # Setting this causes the volume to be recreated on apply 
   size = 1
